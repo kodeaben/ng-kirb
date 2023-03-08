@@ -1,3 +1,7 @@
-<p>kirby-demo works!</p>
-
-<button kirby-button>heyo!</button>
+<kirby-card >
+  <strong>A card</strong>
+  <button kirby-button>heyo!</button>
+</kirby-card>
+<kirby-progress-circle [themeColor]="'success'" [value]="progress" size="lg">
+  {{ progress | number: '1.1-1' }}%
+</kirby-progress-circle>

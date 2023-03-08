@@ -8,9 +8,7 @@ import { KirbyDemoComponent } from './kirby-demo.component';
 
 @NgModule({
   imports: [CommonModule, BrowserModule, KirbyModule, RouterModule.forRoot([])],
-  /**
- declarations: [ShowcaseButtonComponent, TestInterfaceComponent],
- *  */
+  declarations: [KirbyDemoComponent],
   bootstrap: [KirbyDemoComponent],
 })
 export class KirbyDemoModule {}
