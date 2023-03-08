@@ -1,7 +1,12 @@
-<kirby-card >
-  <strong>A card</strong>
+<kirby-card [themeColor]="'tertiary'">
+  <kirby-card-header
+    [title]="'A Kirby Card'"
+    [flagged]="'1'"
+  ></kirby-card-header>
+  <br />
   <button kirby-button>heyo!</button>
+  <br />
+  <kirby-progress-circle [themeColor]="'danger'" [value]="progress" size="lg">
+    {{ progress | number: '1.1-1' }}%
+  </kirby-progress-circle>
 </kirby-card>
-<kirby-progress-circle [themeColor]="'success'" [value]="progress" size="lg">
-  {{ progress | number: '1.1-1' }}%
-</kirby-progress-circle>
