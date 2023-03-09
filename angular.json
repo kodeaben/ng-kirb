@@ -16,7 +16,18 @@
             "outputPath": "dist/demo",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "assets": [],
+            "assets": [
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/@kirbydesign/designsystem/icons/svg",
+                "output": "./assets/kirby/icons/svg"
+              },
+              {
+                "glob": "close.svg",
+                "input": "node_modules/@kirbydesign/designsystem/icons/svg",
+                "output": "./svg"
+              }
+            ],
             "styles": ["src/global_styles.scss"],
             "scripts": []
           },
